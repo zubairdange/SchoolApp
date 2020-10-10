@@ -4,8 +4,9 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { string as yupString, object as yupObject } from "yup";
 import { useFormik } from "formik";
+import moment from "moment";
 export const ValidatedForm = () => {
-  const [startDate, setStartDate] = useState(new Date());
+  //const [startDate, setStartDate] = useState(new Date());
   const [City, setCity] = useState("");
   const [Zip, setZip] = useState("");
   const [Hight, setHight] = useState("");
@@ -132,16 +133,36 @@ export const ValidatedForm = () => {
               </Form.Control.Feedback>
             )}{" "}
           </Form.Group>
-          <Form.Group as={Col} controlId="formGridEmail">
-            <Form.Label>DOB</Form.Label>
+          <Form.Group as={Col} controlId="Date">
+              <Form.Label
+                style={{ paddingRight: "10px" }}
+              >{`Date Of Birth :   `}</Form.Label><br/>
+              <DatePicker
+                id="DOB"
+                selected={formik.values.DOB}
+                className="form-control"
+                onChange={(date) => formik.setFieldValue("DOB", date)}
+                //showYearDropdown
+                //showMonthDropdown
+                maxDate={new Date()}
+                onBlur={formik.handleBlur}
+              />
 
-            <DatePicker
-              selected={startDate}
-              onChange={(date) => setStartDate(date)}
-              maxDate={new Date()}
-              minDate={new Date(1992, 1, 1)}
-            />
-          </Form.Group>
+              {formik.values.DOB &&
+                moment().diff(moment(formik.values.DOB), "years") < 18 && (
+                  <React.Fragment>
+                    <br />
+                    <small class="text-danger">Age should above 18</small>
+                  </React.Fragment>
+                )}
+              {formik.values.DOB &&
+                moment().diff(moment(formik.values.DOB), "years") > 30 && (
+                  <React.Fragment>
+                    <br />
+                    <small class="text-danger">Age should below 30</small>
+                  </React.Fragment>
+                )}
+            </Form.Group>
         </Form.Row>
         <Form.Row>
           <Form.Group as={Col} controlId="formGridCity">
@@ -201,6 +222,7 @@ export const ValidatedForm = () => {
             </Form.Control.Feedback>
           )}{" "}
         </Form.Group>
+    
 
         <Form.Row>
           <Form.Group as={Col} controlId="formGridCity">
@@ -236,13 +258,14 @@ export const ValidatedForm = () => {
         <Form.Group id="formGridCheckbox">
           <Form.Check type="checkbox" label="Check me out" />
         </Form.Group>
+        </Form>
 
         <center>
           <Button variant="primary">Submit</Button>
           {"    "}
           <Button variant="primary">cancel</Button>
         </center>
-      </Form>
+      
     </Container>
   );
 };
