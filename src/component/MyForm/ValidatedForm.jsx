@@ -31,6 +31,14 @@ export const ValidatedForm = () => {
       .required("contact no.is required"),
     phAddress: yupString().required("physical address is required"),
     perAddress: yupString().required("Permanant address is required"),
+    fatherName: yupString()
+      .min(3, "Too short")
+      .max(20, "Too long")
+      .required("Father`s name is required"),
+      MothersName: yupString()
+      .min(3, "Too short")
+      .max(20, "Too long")
+      .required("Mother name is required"),
   });
 
   const formik = useFormik({
@@ -191,7 +199,7 @@ export const ValidatedForm = () => {
           </Form.Group>
         </Form.Row>
 
-        <Form.Group controlId="phAddress">
+        {/*<Form.Group controlId="phAddress">
           <Form.Label>Physical Address</Form.Label>
           <Form.Control
             placeholder="Enter Physical Address"
@@ -205,7 +213,51 @@ export const ValidatedForm = () => {
               {formik.errors.phAddress}
             </Form.Control.Feedback>
           )}{" "}
-        </Form.Group>
+          </Form.Group>*/}
+          <p>Family Details:-</p>
+          <Form.Row>
+          <Form.Group as={Col} controlId="fatherName">
+            <Form.Label>Father name</Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="Father Name"
+              value={formik.values.fatherName}
+              maxLength={20}
+              onChange={(e) =>
+                formik.setFieldValue("fatherName", e.target.value)
+              }
+              onBlur={formik.handleBlur}
+              isInvalid={formik.touched.fatherName && formik.errors.fatherName}
+            />
+            {formik.touched.fatherName && formik.errors.fatherName && (
+              <Form.Control.Feedback type="invalid">
+                {formik.errors.fatherName}
+              </Form.Control.Feedback>
+            )}
+          </Form.Group>
+          / </Form.Row>
+          <Form.Row>
+          <Form.Group as={Col} controlId="fatherName">
+            <Form.Label>Mother name</Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="Mother Name"
+              value={formik.values.fatherName}
+              maxLength={20}
+              onChange={(e) =>
+                formik.setFieldValue("MotherName", e.target.value)
+              }
+              onBlur={formik.handleBlur}
+              isInvalid={formik.touched.MotherName && formik.errors.MotherName}
+            />
+            {formik.touched.MotherName && formik.errors.MotherName && (
+              <Form.Control.Feedback type="invalid">
+                {formik.errors.MotherName}
+              </Form.Control.Feedback>
+            )}
+          </Form.Group>
+          / </Form.Row>
+          
 
         <Form.Group controlId="perAddress">
           <Form.Label>Permanent Address</Form.Label>
