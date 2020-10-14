@@ -6,9 +6,10 @@ export const Home = () => {
   return (
     <div>
       {/*} <Mycarousel />
-      <MyForm />      */}
+         <MyForm /> */}
+      <ValidatedForm />  
 
-      <ValidatedForm />
+
     </div>
   );
 };

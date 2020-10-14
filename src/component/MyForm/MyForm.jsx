@@ -3,7 +3,7 @@ import { Form, Button, Col, Container } from "react-bootstrap";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 export const MyForm = () => {
-  //const [startDate, setStartDate] = useState(new Date());
+  const [startDate, setStartDate] = useState(new Date());
   const [FirstName, setFirstName] = useState("Zubair");
   const [MidleName, setMidleName] = useState("Ahmed");
   const [LastName, setLastName] = useState("Dange");
@@ -23,6 +23,7 @@ export const MyForm = () => {
       </center>
       <Form>
         <Form.Row>
+           
           <Form.Group as={Col} controlId="formGridEmail">
             <Form.Label>First Name</Form.Label>
             <Form.Control
