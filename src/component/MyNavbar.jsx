@@ -16,8 +16,8 @@ export const MyNavbar = () => {
         <Navbar.Brand href="#home">My Practice</Navbar.Brand>
 
         <Nav>
-          <Nav.Link href="">Home</Nav.Link>
-          <Nav.Link href="#features">charts</Nav.Link>
+          <Nav.Link href="#home">Home</Nav.Link>
+          <Nav.Link href="#charts">charts</Nav.Link>
           <Nav.Link href="#pricing">Pricing</Nav.Link>
           <Nav.Link href="#home">health</Nav.Link>
           <Nav.Link href="#features">Footware</Nav.Link>
@@ -33,15 +33,26 @@ export const MyNavbar = () => {
               Separated link
             </NavDropdown.Item>
           </NavDropdown>
+          <ul>
+            <li>ui development</li>
+            <li>
+              Backend
+              <li>php</li>
+              <li>sql</li>
+            </li>
+          </ul>
+          <ul>
+            <li>ui development</li>
+            <li>Backend </li>
+          </ul>
           <Dropdown as={NavItem}>
-            <Dropdown.Toggle as={NavLink}>Click to see more…</Dropdown.Toggle>
+            <Dropdown.Toggle as={NavLink}>Click</Dropdown.Toggle>
             <Dropdown.Menu>
               <Dropdown.Item>Hello there!</Dropdown.Item>
               <Dropdown.Item>Hello here!</Dropdown.Item>
               <Dropdown.Item>Hello where!</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
-          ;
         </Nav>
       </Navbar>
     </div>
