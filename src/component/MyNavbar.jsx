@@ -1,14 +1,19 @@
-import React, { Ul, Li } from "react";
+import React from "react";
 import {
-  Col,
   Navbar,
   Nav,
   NavLink,
   NavDropdown,
   Dropdown,
   NavItem,
+  Button,
+  Form,
+  FormControl,
 } from "react-bootstrap";
-import NavbarToggle from "react-bootstrap/esm/NavbarToggle";
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Chart } from "./Charts/Chart";
+import { Home } from "./Home/Home";
 export const MyNavbar = () => {
   return (
     <div>
@@ -16,8 +21,8 @@ export const MyNavbar = () => {
         <Navbar.Brand href="#home">My Practice</Navbar.Brand>
 
         <Nav>
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#charts">charts</Nav.Link>
+          <Nav.Link href="/Home">Home</Nav.Link>
+          <Nav.Link href="/Chart">Charts</Nav.Link>
           <Nav.Link href="#pricing">Pricing</Nav.Link>
           <Nav.Link href="#home">health</Nav.Link>
           <Nav.Link href="#features">Footware</Nav.Link>
@@ -33,18 +38,7 @@ export const MyNavbar = () => {
               Separated link
             </NavDropdown.Item>
           </NavDropdown>
-          <ul>
-            <li>ui development</li>
-            <li>
-              Backend
-              <li>php</li>
-              <li>sql</li>
-            </li>
-          </ul>
-          <ul>
-            <li>ui development</li>
-            <li>Backend </li>
-          </ul>
+
           <Dropdown as={NavItem}>
             <Dropdown.Toggle as={NavLink}>Click</Dropdown.Toggle>
             <Dropdown.Menu>
@@ -53,8 +47,22 @@ export const MyNavbar = () => {
               <Dropdown.Item>Hello where!</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
+          <Form inline>
+            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+            <Button variant="outline-success">Search</Button>
+          </Form>
         </Nav>
       </Navbar>
+      <Router>
+        <Switch>
+          <Route path="/Chart">
+            <Chart />
+          </Route>
+          <Route path="/Home">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 };

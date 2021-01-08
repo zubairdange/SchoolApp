@@ -1,5 +1,5 @@
-import React from "react";
-import { Row, Col } from "react-bootstrap";
+import React, { useState } from "react";
+import { Row, Col, Button } from "react-bootstrap";
 import { MyChart } from "./MyChart";
 import { MyChart1 } from "./MyChart1";
 import { MyChart2 } from "./MyChart2";
@@ -12,33 +12,37 @@ import { MyChart8 } from "./MyChart8";
 import { MyChart9 } from "./MyChart9";
 import { MyChart10 } from "./MyChart10";
 export const Chart = () => {
+  const [show, setShow] = useState();
   return (
     <div>
-      <Row>
-        <Col>
-          <MyChart />
-        </Col>
-        <Col>
-          <MyChart1 />
-        </Col>
-        <MyChart2 />
+      <Button onClick={() => setShow(!show)}>Show All Charts</Button>
+      {show && (
+        <Row>
+          <Col>
+            <MyChart />
+          </Col>
+          <Col>
+            <MyChart1 />
+          </Col>
+          <MyChart2 />
 
-        <MyChart4 />
-        <MyChart5 />
-        <Col>
-          <MyChart6 />
-        </Col>
-        <Col>
-          <MyChart7 />
-        </Col>
-        <Col>
-          <MyChart8 />
-        </Col>
-        <MyChart9 />
-        <Col>
-          <MyChart10 />
-        </Col>
-      </Row>
+          <MyChart4 />
+          <MyChart5 />
+          <Col>
+            <MyChart6 />
+          </Col>
+          <Col>
+            <MyChart7 />
+          </Col>
+          <Col>
+            <MyChart8 />
+          </Col>
+          <MyChart9 />
+          <Col>
+            <MyChart10 />
+          </Col>
+        </Row>
+      )}
     </div>
   );
 };

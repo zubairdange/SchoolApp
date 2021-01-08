@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
+import { Button } from "react-bootstrap";
 
-import { Line } from "react-chartjs-2";
+import { Bar } from "react-chartjs-2";
 
 const data = {
   labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
@@ -24,7 +25,7 @@ const data = {
 export const MyChart9 = () => {
   return (
     <div className="App">
-      <Line data={data} />
+      <Bar data={data} />
     </div>
   );
 };
