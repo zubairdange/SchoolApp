@@ -7,7 +7,6 @@ import { Chart } from "./component/Charts/Chart";
 import { MyBar } from "./component/MyBar/MyBar";
 import { Rendering } from "./component/Rendering";
 import { MyNavbar } from "./component/MyNavbar";
-
 import { Landing } from "./component/Landing";
 
 function App() {
@@ -15,7 +14,7 @@ function App() {
     <div>
       <MyNavbar />
 
-      <Landing />
+      {/* <Landing /> */}
     </div>
   );
 }

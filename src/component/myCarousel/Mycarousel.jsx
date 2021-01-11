@@ -9,14 +9,21 @@ export const Mycarousel = () => {
     <div>
       <Carousel>
         <Carousel.Item>
-          <img className="d-block w-100" src={Img} alt="First slide" />
+          <img
+            // className="d-block w-100"
+            width={1500}
+            height={250}
+            alt="900x500"
+            src={Img}
+            alt="First slide"
+          />
           <Carousel.Caption>
             <h3>First slide label</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100" src={Img1} alt="Third slide" />
+          <img width={1500} height={250} src={Img1} alt="Third slide" />
 
           <Carousel.Caption>
             <h3>Second slide label</h3>
@@ -24,7 +31,7 @@ export const Mycarousel = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img className="d-block w-100" src={Img2} alt="Third slide" />
+          <img width={1500} height={250} src={Img2} alt="Third slide" />
 
           <Carousel.Caption>
             <h3>Third slide label</h3>
