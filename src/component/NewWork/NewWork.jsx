@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Button } from "react-bootstrap";
 import { Mycarousel } from "../myCarousel/Mycarousel";
 import { NavCategory } from "../Navbar/NavCategory";
 import { CardParent } from "./Cards/CardParent";
@@ -10,7 +10,9 @@ export const NewWork = () => {
     <div>
       <NavCategory />
       <Mycarousel />
-      <br></br>
+
+      <lable>Deals Of The Day</lable>
+      <Button>View All</Button>
       <CardParent />
     </div>
   );
