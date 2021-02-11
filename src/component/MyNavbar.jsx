@@ -19,6 +19,7 @@ import SearchIcon from "@material-ui/icons/Search";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { LoginForm } from "../component/LoginForm/LoginForm";
 import { NewAccount } from "../component/LoginForm/NewAccount";
+import { AdmissinForm } from "./AdmissinForm";
 export const MyNavbar = () => {
   return (
     <div>
@@ -30,7 +31,7 @@ export const MyNavbar = () => {
           <Nav.Link href="/Chart">Charts</Nav.Link>
           <Nav.Link href="/NewWork">NewWork</Nav.Link>
           <Nav.Link href="#home">health</Nav.Link>
-          <Nav.Link href="#features">Footware</Nav.Link>
+          <Nav.Link href="/AdmissinForm">AdmissinForm</Nav.Link>
           <Nav.Link href="#pricing">cloths</Nav.Link>
           {/* <NavDropdown title="CURTAINS" id="collasible-nav-dropdown">
             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -74,6 +75,9 @@ export const MyNavbar = () => {
           </Route>
           <Route path="/NewWork">
             <NewWork />
+          </Route>
+          <Route path="/AdmissinForm">
+            <AdmissinForm />
           </Route>
           {/* <Route path="/LoginForm">
             <LoginForm />
