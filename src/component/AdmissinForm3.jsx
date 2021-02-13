@@ -1,11 +1,51 @@
 import React from "react";
-import { Col, Row, Form, Button } from "react-bootstrap";
+import { Col, Row, Form, Button, Table } from "react-bootstrap";
 import { AdmissinForm2 } from "./AdmissinForm2";
 import { AdmissinForm4 } from "./AdmissinForm4";
 
 export const AdmissinForm3 = () => {
   return (
     <div>
+      <Table striped bordered hover>
+        <thead>
+          <tr>
+            <th>Address Details :(Local Guardian Address)</th>
+          </tr>
+        </thead>
+      </Table>
+      <Table striped bordered hover>
+        <thead>
+          <tr>
+            <th>Guardian Name:</th>
+
+            <th>
+              <Form.Control size="sm" type="text" />
+            </th>
+            <th>Guardian Occupation:</th>
+            <th>
+              <Form.Control size="sm" type="text" />
+            </th>
+            <th>Relation With Guardian :</th>
+            <th>
+              <Form.Control size="sm" type="text" />
+            </th>
+            <th>Guardian E-mail ID :</th>
+            <th>
+              <Form.Control size="sm" type="text" />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Reimbusment</td>
+            <td>Due Amount</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </Table>
       <Form>
         <Row
           style={{ backgroundColor: "#EE7C7C", color: "green", height: "3rem" }}
