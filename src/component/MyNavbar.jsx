@@ -19,7 +19,10 @@ import SearchIcon from "@material-ui/icons/Search";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { LoginForm } from "../component/LoginForm/LoginForm";
 import { NewAccount } from "../component/LoginForm/NewAccount";
-import { AdmissinForm } from "./AdmissinForm";
+import { AdmissinForm1 } from "./AdmissinForm1";
+import { AdmissinForm2 } from "./AdmissinForm2";
+import { AdmissinForm3 } from "./AdmissinForm3";
+import { AdmissinForm4 } from "./AdmissinForm4";
 export const MyNavbar = () => {
   return (
     <div>
@@ -32,7 +35,7 @@ export const MyNavbar = () => {
           <Nav.Link href="/NewWork">NewWork</Nav.Link>
           <Nav.Link href="#home">health</Nav.Link>
           <Nav.Link href="/AdmissinForm">AdmissinForm</Nav.Link>
-          <Nav.Link href="#pricing">cloths</Nav.Link>
+          {/* <Nav.Link href="/AdmissinForm2">AdmissinForm2</Nav.Link> */}
           {/* <NavDropdown title="CURTAINS" id="collasible-nav-dropdown">
             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">
@@ -77,7 +80,19 @@ export const MyNavbar = () => {
             <NewWork />
           </Route>
           <Route path="/AdmissinForm">
-            <AdmissinForm />
+            <AdmissinForm1 />
+          </Route>
+          <Route path="/AdmissinForm2">
+            <AdmissinForm2 />
+          </Route>
+          <Route path="/AdmissinForm1">
+            <AdmissinForm1 />
+          </Route>
+          <Route path="/AdmissinForm3">
+            <AdmissinForm3 />
+          </Route>
+          <Route path="/AdmissinForm4">
+            <AdmissinForm4 />
           </Route>
           {/* <Route path="/LoginForm">
             <LoginForm />
