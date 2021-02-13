@@ -265,14 +265,21 @@ export const AdmissinForm3 = () => {
           time of registration at college.
         </li>
       </ol>
-      <Row>
-        <Button href="/AdmissinForm2" onClick={AdmissinForm2}>
-          Previous
-        </Button>
-        <Button href="/AdmissinForm4" onclick={AdmissinForm4}>
-          Next
-        </Button>
-      </Row>
+
+      <Button
+        style={{ float: "right" }}
+        href="/AdmissinForm4"
+        onclick={AdmissinForm4}
+      >
+        Next
+      </Button>
+      <Button
+        style={{ float: "right" }}
+        href="/AdmissinForm2"
+        onClick={AdmissinForm2}
+      >
+        Previous
+      </Button>
     </div>
   );
 };

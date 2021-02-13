@@ -119,165 +119,147 @@ export const AdmissinForm4 = () => {
         </tbody>
       </Table>
       <Table striped bordered hover>
-        <thead>
+        <tbody>
           <tr>
-            <th>1</th>
-            <th>
+            <td>1</td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
-            <th>l</th>
-            <th>
+            </td>
+            <td>l</td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
-            <th>
+            </td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
-            <th>
+            </td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
-            <th>
+            </td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
+            </td>
           </tr>
-        </thead>
-      </Table>
-      <Table striped bordered hover>
-        <thead>
+
           <tr>
-            <th>2</th>
-            <th>
+            <td>2</td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
-            <th>ll/l</th>
-            <th>
+            </td>
+            <td>ll/l</td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
-            <th>
+            </td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
-            <th>
+            </td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
-            <th>
+            </td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
+            </td>
           </tr>
-        </thead>
-      </Table>
-      <Table striped bordered hover>
-        <thead>
+
           <tr>
-            <th>3</th>
-            <th>
+            <td>3</td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
-            <th>ll/ll</th>
-            <th>
+            </td>
+            <td>ll/ll</td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
-            <th>
+            </td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
-            <th>
+            </td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
-            <th>
+            </td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
+            </td>
           </tr>
-        </thead>
-      </Table>
-      <Table striped bordered hover>
-        <thead>
+
           <tr>
-            <th>4</th>
-            <th>
+            <td>4</td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
-            <th>lll/l</th>
-            <th>
+            </td>
+            <td>lll/l</td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
-            <th>
+            </td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
-            <th>
+            </td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
-            <th>
+            </td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
+            </td>
           </tr>
-        </thead>
-      </Table>
-      <Table striped bordered hover>
-        <thead>
+
           <tr>
-            <th>5</th>
-            <th>
+            <td>5</td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
-            <th>lll/ll</th>
-            <th>
+            </td>
+            <td>lll/ll</td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
-            <th>
+            </td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
-            <th>
+            </td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
-            <th>
+            </td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
+            </td>
           </tr>
-        </thead>
-      </Table>
-      <Table striped bordered hover>
-        <thead>
+
           <tr>
-            <th>6</th>
-            <th>
+            <td>6</td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
-            <th>lv/l</th>
-            <th>
+            </td>
+            <td>lv/l</td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
-            <th>
+            </td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
-            <th>
+            </td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
-            <th>
+            </td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
+            </td>
           </tr>
-        </thead>
-      </Table>
-      <Table striped bordered hover>
-        <thead>
+
           <tr>
-            <th>7</th>
-            <th>
+            <td>7</td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
-            <th>lv/ll</th>
-            <th>
+            </td>
+            <td>lv/ll</td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
-            <th>
+            </td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
-            <th>
+            </td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
-            <th>
+            </td>
+            <td>
               <Form.Control size="sm" type="text" />
-            </th>
+            </td>
           </tr>
-        </thead>
+        </tbody>
       </Table>
       <Row>
         <Col>
@@ -287,14 +269,16 @@ export const AdmissinForm4 = () => {
           <h4>Signature of the receiver</h4>
         </Col>
       </Row>
-      <Row>
-        <Col>
-          <Button href="/AdmissinForm3" onClick={AdmissinForm3}>
-            Previous
-          </Button>
-          <Button type="submit">Finish</Button>
-        </Col>
-      </Row>
+      <Button style={{ float: "right" }} type="submit">
+        Finish
+      </Button>
+      <Button
+        style={{ float: "right" }}
+        href="/AdmissinForm3"
+        onClick={AdmissinForm3}
+      >
+        Previous
+      </Button>
     </div>
   );
 };

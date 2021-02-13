@@ -1,273 +1,275 @@
 import { Label } from "@material-ui/icons";
 import React from "react";
 import { AdmissinForm2 } from "./AdmissinForm2";
-import { Form, Col, Button, Row, Dropdown } from "react-bootstrap";
+import { Form, Col, Button, tr, Dropdown, Table } from "react-bootstrap";
 
 export const AdmissinForm1 = () => {
   return (
-    <Form>
+    <div>
       <lable>
         Download Student Admission Form
         <Button href="StudentAdmissionForm.pdf">Download</Button>
       </lable>
+      <Table striped bordered hover>
+        <tr
+          style={{
+            textAlign: "center",
+          }}
+        >
+          <td colSpan="8">For Office Use Only</td>
+        </tr>
+        <tr>
+          <td colSpan="8" style={{ textAlign: "center" }}>
+            For Payment Detais (details of DD/Pay order){" "}
+          </td>
+          {/* <td lg={8}>
+          <Form.Control size="sm" type="text" style={{ width: "70%" }} />
+        </td> */}
+        </tr>
+        <tr>
+          <td>1.DD.No.</td>
+          <td>
+            <Form.Control size="sm" type="text" />
+          </td>
+          <td>Amount</td>
+          <td>
+            <Form.Control size="sm" type="text" />
+          </td>
+          <td>Date</td>
+          <td>
+            <Form.Control size="sm" type="text" />
+          </td>
+          <td>Bank</td>
+          <td>
+            <Form.Control size="sm" type="text" />
+          </td>
+        </tr>
 
-      <Row
-        style={{
-          backgroundColor: "lightgray",
-          height: "3rem",
-          textAlign: "center",
-        }}
-      >
-        <Col>For Office Use Only</Col>
-      </Row>
-      <Row
-        style={{
-          backgroundColor: "lightgray",
-          height: "3rem",
-          textAlign: "center",
-        }}
-      >
-        <Col>For Payment Detais (details of DD/Pay order) </Col>
-        {/* <Col lg={8}>
-          <Form.Control size="sm" type="text" style={{ width: "70%" }} />
-        </Col> */}
-      </Row>
-      <Row>
-        <Col>1.DD.No.</Col>
-        <Col>
-          <Form.Control size="sm" type="text" style={{ width: "70%" }} />
-        </Col>
-        <Col>Amount</Col>
-        <Col>
-          <Form.Control size="sm" type="text" style={{ width: "70%" }} />
-        </Col>
-        <Col>Date</Col>
-        <Col>
-          <Form.Control size="sm" type="text" style={{ width: "70%" }} />
-        </Col>
-        <Col>Bank</Col>
-        <Col>
-          <Form.Control size="sm" type="text" style={{ width: "70%" }} />
-        </Col>
-      </Row>
+        <tr style={{ backgroundtdor: "lightgray" }}>
+          <td>2.DD.No.</td>
+          <td>
+            <Form.Control size="sm" type="text" />
+          </td>
+          <td>Amount</td>
+          <td>
+            <Form.Control size="sm" type="text" />
+          </td>
+          <td>Date</td>
+          <td>
+            <Form.Control size="sm" type="text" />
+          </td>
+          <td>Bank</td>
+          <td>
+            <Form.Control size="sm" type="text" />
+          </td>
+        </tr>
 
-      <Row style={{ backgroundColor: "lightgray" }}>
-        <Col>2.DD.No.</Col>
-        <Col>
-          <Form.Control size="sm" type="text" style={{ width: "70%" }} />
-        </Col>
-        <Col>Amount</Col>
-        <Col>
-          <Form.Control size="sm" type="text" style={{ width: "70%" }} />
-        </Col>
-        <Col>Date</Col>
-        <Col>
-          <Form.Control size="sm" type="text" style={{ width: "70%" }} />
-        </Col>
-        <Col>Bank</Col>
-        <Col>
-          <Form.Control size="sm" type="text" style={{ width: "70%" }} />
-        </Col>
-      </Row>
-      <Row style={{ height: "3rem" }}>
-        <Col>NSAKCET Regd No</Col>
-        <Col lg={2}>
-          <Form.Control size="sm" type="text" />
-        </Col>
-        <Col>
-          Signature <br />
-          Office Incharge Of Admission Counter
-        </Col>
-      </Row>
+        <tr>
+          <td colSpan="2">NSAKCET Regd No</td>
+          <td colSpan="2">
+            <Form.Control size="sm" type="text" />
+          </td>
+          <td colSpan="4">
+            Signature <br />
+            Office Incharge Of Admission Counter
+          </td>
+        </tr>
 
-      <br />
-      <Row
-        style={{ backgroundColor: "#EE7C7C", color: "green", height: "3rem" }}
+        <tr>
+          <th colSpan="8">Admission Details</th>
+        </tr>
+
+        <tr>
+          <td colSpan="4">Hall Ticket No.</td>
+          <td colSpan="4">
+            <Form.Control size="sm" type="text" />
+          </td>
+        </tr>
+        <tr>
+          <td colSpan="4">
+            Name Of The Candidate(Mr./Mrs. /Miss.)
+            <br /> (IN BLOCK LETTERS AS PER SSC)
+          </td>
+          <td colSpan="4">
+            <Form.Control size="sm" type="text" />
+          </td>
+        </tr>
+        <tr>
+          <td colSpan="2">Adhar ID (UID)</td>
+          <td colSpan="2">
+            <Form.Control size="sm" type="text" />
+          </td>
+          <td colSpan="2">PAN Card (if any)</td>
+          <td colSpan="2">
+            <Form.Control size="sm" type="text" />
+          </td>
+        </tr>
+        <tr>
+          <td colSpan="4">
+            Name OF Father <br />
+            (IN BLOCK LETTERS AS PER SSC)
+          </td>
+          <td colSpan="4">
+            <Form.Control size="sm" type="text" />
+          </td>
+        </tr>
+        <tr>
+          <td colSpan="4">
+            Name OF Mother <br />
+            (IN BLOCK LETTERS AS PER SSC)
+          </td>
+          <td colSpan="4">
+            <Form.Control size="sm" type="text" />
+          </td>
+        </tr>
+        <tr>
+          <td colSpan="2">Date Of Birth (AS PER SSC)</td>
+          <td colSpan="2">
+            <Form.Control size="sm" type="text" placeholder="(DD/MM/YY)" />
+          </td>
+          <td colSpan="2">select Gender</td>
+          <td colSpan="2">
+            <Form.Control as="select" defaultValue="Choose...">
+              <option>Male</option>
+              <option>Female</option>
+              <option>Other</option>
+              ))}
+            </Form.Control>
+          </td>
+        </tr>
+        <tr>
+          <td colSpan="4">
+            <Form.Label>Type Of Admission</Form.Label>
+          </td>
+          <td colSpan="4">
+            <Form.Control as="select" defaultValue="Choose...">
+              <option>Management</option>
+              <option>Convener</option>
+              <option>Spot</option>
+              ))}
+            </Form.Control>
+          </td>
+        </tr>
+        <tr>
+          <td colSpan="2">
+            Admission Category
+            <br />
+            (SC,OBS,ST,General,GOI etc.)
+          </td>
+          <td colSpan="2">
+            <Form.Control size="sm" type="text" />
+          </td>
+          <td colSpan="2">Cast</td>
+          <td colSpan="2">
+            <Form.Control size="sm" type="text" />
+          </td>
+        </tr>
+        <tr>
+          <td colSpan="2">Mother Tongue:</td>
+          <td colSpan="2">
+            <Form.Control size="sm" type="text" />
+          </td>
+          <td colSpan="2">Blood Group: </td>
+          <td colSpan="2">
+            <Form.Control size="sm" type="text" />
+          </td>
+        </tr>
+        <tr>
+          <td colSpan="2">Email ID:</td>
+          <td colSpan="2">
+            <Form.Control size="sm" type="text" />
+          </td>
+          <td colSpan="2">Identification Mark:</td>
+          <td colSpan="2">
+            <Form.Control size="sm" type="text" />
+          </td>
+        </tr>
+        <tr>
+          <td colSpan="2">Father Occupation:</td>
+          <td colSpan="2">
+            <Form.Control size="sm" type="text" />
+          </td>
+          <td colSpan="2">Phone no: </td>
+          <td colSpan="2">
+            <Form.Control size="sm" type="text" />
+          </td>
+        </tr>
+        <tr>
+          <td colSpan="2">Father Occupation:</td>
+          <td colSpan="2">
+            <Form.Control size="sm" type="text" />
+          </td>
+          <td colSpan="2">Phone: </td>
+          <td colSpan="2">
+            <Form.Control size="sm" type="text" />
+          </td>
+        </tr>
+
+        <tr>
+          <th colSpan="8">Admission Details (SSC/CBSC/X/ICSE Std.Details)</th>
+        </tr>
+        <tr>
+          <td colSpan="4">
+            <Form.Label>Board Of Exam</Form.Label>
+          </td>
+          <td colSpan="4">
+            <Form.Control size="sm" type="text" />
+          </td>
+        </tr>
+        <tr>
+          <td colSpan="4"> Name OF School :</td>
+          <td colSpan="4">
+            <Form.Control size="sm" type="text" />
+          </td>
+        </tr>
+        <tr>
+          <td colSpan="2"> Hall Ticket No. </td>
+          <td colSpan="2">
+            <Form.Control size="sm" type="text" />
+          </td>
+          <td colSpan="2">Total Marks Obtained :</td>
+          <td colSpan="2">
+            <Form.Control size="sm" type="text" />
+          </td>
+        </tr>
+        <tr>
+          <td colSpan="2">Maximum Marks :</td>
+          <td colSpan="2">
+            <Form.Control size="sm" type="text" />
+          </td>
+          <td colSpan="2">Passing Month : </td>
+          <td colSpan="2">
+            <Form.Control size="sm" type="text" />
+          </td>
+        </tr>
+        <tr>
+          <td colSpan="1">Year : </td>
+          <td colSpan="1">
+            <Form.Control size="sm" type="text" />
+          </td>
+          <td colSpan="2">Percentage Marks Scored: </td>
+          <td colSpan="2">
+            <Form.Control size="sm" type="text" />
+          </td>
+          <td colSpan="1">Grade: </td>
+          <td colSpan="">
+            <Form.Control size="sm" type="text" />
+          </td>
+        </tr>
+      </Table>
+      <tr>
+        <td colSpan="8">
+          (Note: Attach attested photocopy of 10th sts mark card)
+        </td>
+      </tr>
+
+      <Button
+        style={{ float: "right" }}
+        href="/AdmissinForm2"
+        onClick={AdmissinForm2}
       >
-        Admission Details
-      </Row>
-      <Row style={{ backgroundColor: "lightgray" }}>
-        <Col>Hall Ticket No.</Col>
-        <Col>
-          <Form.Control size="sm" type="text" style={{ width: "70%" }} />
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          Name Of The Candidate(Mr./Mrs. /Miss.) <br />
-          (IN BLOCK LETTERS AS PER SSC)
-        </Col>
-        <Col>
-          <Form.Control size="sm" type="text" style={{ width: "70%" }} />
-        </Col>
-      </Row>
-      <Row style={{ backgroundColor: "lightgray" }}>
-        <Col>Adhar ID (UID)</Col>
-        <Col>
-          <Form.Control size="sm" type="text" style={{ width: "70%" }} />
-        </Col>
-        <Col>PAN Card (if any)</Col>
-        <Col>
-          <Form.Control size="sm" type="text" style={{ width: "70%" }} />
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          Name OF Father <br />
-          (IN BLOCK LETTERS AS PER SSC)
-        </Col>
-        <Col>
-          <Form.Control size="sm" type="text" />
-        </Col>
-      </Row>
-      <Row style={{ backgroundColor: "lightgray" }}>
-        <Col>
-          Name OF Mother <br />
-          (IN BLOCK LETTERS AS PER SSC)
-        </Col>
-        <Col>
-          <Form.Control size="sm" type="text" />
-        </Col>
-      </Row>
-      <Row>
-        <Col>Date Of Birth (AS PER SSC)</Col>
-        <Col>
-          <Form.Control size="sm" type="text" placeholder="(DD/MM/YY)" />
-        </Col>
-        <Col>
-          <Form.Control as="select" defaultValue="Choose...">
-            <option>Select Gender</option>
-            <option>Male</option>
-            <option>Female</option>
-            <option>Other</option>
-            ))}
-          </Form.Control>
-        </Col>
-      </Row>
-      <Row style={{ backgroundColor: "lightgray" }}>
-        <Col>
-          <Form.Label>Type Of Admission</Form.Label>
-        </Col>
-        <Col>
-          <Form.Control as="select" defaultValue="Choose...">
-            <option>Management</option>
-            <option>Convener</option>
-            <option>Spot</option>
-            ))}
-          </Form.Control>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          Admission Category
-          <br />
-          (SC,OBS,ST,General,GOI etc.)
-        </Col>
-        <Col>
-          <Form.Control size="sm" type="text" />
-        </Col>
-        <Col>Cast</Col>
-        <Col>
-          <Form.Control size="sm" type="text" />
-        </Col>
-      </Row>
-      <Row style={{ backgroundColor: "lightgray" }}>
-        <Col>Mother Tongue:</Col>
-        <Col>
-          <Form.Control size="sm" type="text" />
-        </Col>
-        <Col>Blood Group: </Col>
-        <Col>
-          <Form.Control size="sm" type="text" />
-        </Col>
-      </Row>
-      <Row>
-        <Col>Email ID:</Col>
-        <Col>
-          <Form.Control size="sm" type="text" />
-        </Col>
-        <Col>Identification Mark:</Col>
-        <Col>
-          <Form.Control size="sm" type="text" />
-        </Col>
-      </Row>
-      <Row style={{ backgroundColor: "lightgray" }}>
-        <Col>Father Occupation:</Col>
-        <Col>
-          <Form.Control size="sm" type="text" />
-        </Col>
-        <Col>Phone no: </Col>
-        <Col>
-          <Form.Control size="sm" type="text" />
-        </Col>
-      </Row>
-      <Row>
-        <Col>Father Occupation:</Col>
-        <Col>
-          <Form.Control size="sm" type="text" />
-        </Col>
-        <Col>Phone: </Col>
-        <Col>
-          <Form.Control size="sm" type="text" />
-        </Col>
-      </Row>
-      <Row
-        style={{ backgroundColor: "#EE7C7C", color: "green", height: "3rem" }}
-      >
-        Admission Details (SSC/CBSC/X/ICSE Std.Details)
-      </Row>
-      <Row>
-        <Col>
-          <Form.Label>Board Of Exam</Form.Label>
-        </Col>
-        <Col>
-          <Form.Control size="sm" type="text" />
-        </Col>
-      </Row>
-      <Row style={{ backgroundColor: "lightgray" }}>
-        <Col> Name OF School :</Col>
-        <Col>
-          <Form.Control size="sm" type="text" />
-        </Col>
-      </Row>
-      <Row>
-        <Col>Hall Ticket No. </Col>
-        <Col>
-          <Form.Control size="sm" type="text" />
-        </Col>
-        <Col>Total Marks Obtained :</Col>
-        <Col>
-          <Form.Control size="sm" type="text" />
-        </Col>
-      </Row>
-      <Row style={{ backgroundColor: "lightgray" }}>
-        <Col>Maximum Marks :</Col>
-        <Col lg={1}>
-          <Form.Control size="sm" type="text" />
-        </Col>
-        <Col>Passing Month : </Col>
-        <Col lg={1}>
-          <Form.Control size="sm" type="text" />
-        </Col>
-        <Col>Year : </Col>
-        <Col lg={1}>
-          <Form.Control size="sm" type="text" />
-        </Col>
-        <Col>Percentage Marks Scored: </Col>
-        <Col lg={1}>
-          <Form.Control size="sm" type="text" />
-        </Col>
-        <Col>Grade: </Col>
-        <Col lg={1}>
-          <Form.Control size="sm" type="text" />
-        </Col>
-      </Row>
-      <Row>
-        <Col>(Note: Attach attested photocopy of 10th sts mark card)</Col>
-      </Row>
-      <Button href="/AdmissinForm2" onClick={AdmissinForm2}>
         Next
       </Button>
-    </Form>
+    </div>
   );
 };
