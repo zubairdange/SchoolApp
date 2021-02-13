@@ -6,6 +6,10 @@ import { AdmissinForm4 } from "./AdmissinForm4";
 export const AdmissinForm3 = () => {
   return (
     <div>
+      <lable>
+        Download Student Admission Form
+        <Button href="StudentAdmissionForm.pdf">Download</Button>
+      </lable>
       <Table striped bordered hover>
         <thead>
           <tr>

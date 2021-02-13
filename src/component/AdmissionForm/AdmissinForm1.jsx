@@ -7,12 +7,10 @@ export const AdmissinForm1 = () => {
   return (
     <Form>
       <lable>
-        Download Student Admission Form<Button>Download</Button>
+        Download Student Admission Form
+        <Button href="StudentAdmissionForm.pdf">Download</Button>
       </lable>
-      <iframe
-        src="StudentAdmissionForm.pdf"
-        title="Download Student Admission Form"
-      ></iframe>
+
       <Row
         style={{
           backgroundColor: "lightgray",

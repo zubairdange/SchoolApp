@@ -19,10 +19,10 @@ import SearchIcon from "@material-ui/icons/Search";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { LoginForm } from "../component/LoginForm/LoginForm";
 import { NewAccount } from "../component/LoginForm/NewAccount";
-import { AdmissinForm1 } from "./AdmissinForm1";
-import { AdmissinForm2 } from "./AdmissinForm2";
-import { AdmissinForm3 } from "./AdmissinForm3";
-import { AdmissinForm4 } from "./AdmissinForm4";
+import { AdmissinForm1 } from "./AdmissionForm/AdmissinForm1";
+import { AdmissinForm2 } from "./AdmissionForm/AdmissinForm2";
+import { AdmissinForm3 } from "./AdmissionForm/AdmissinForm3";
+import { AdmissinForm4 } from "./AdmissionForm/AdmissinForm4";
 export const MyNavbar = () => {
   return (
     <div>

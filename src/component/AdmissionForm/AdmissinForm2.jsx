@@ -1,17 +1,15 @@
 import React from "react";
 import { Button, Row, Col, Form } from "react-bootstrap";
-import { AdmissinForm1 } from "../component/AdmissinForm1";
+import { AdmissinForm1 } from "./AdmissinForm1";
 import { AdmissinForm3 } from "./AdmissinForm3";
 export const AdmissinForm2 = () => {
   return (
     <div>
       <lable>
-        Download Student Admission Form<Button>Download</Button>
+        Download Student Admission Form
+        <Button href="StudentAdmissionForm.pdf">Download</Button>
       </lable>
-      <iframe
-        src="StudentAdmissionForm.pdf"
-        title="Download Student Admission Form"
-      ></iframe>
+
       <Row
         style={{ backgroundColor: "#EE7C7C", color: "green", height: "3rem" }}
       >
